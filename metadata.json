@@ -1,0 +1,6 @@
+{
+  "name": "Hospital Operations",
+  "description": "Care Today · Healthier Tomorrow. Futuristic, high-fidelity hospital operations command center with real-time operational analytics, capacity monitoring, and resource management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

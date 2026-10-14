@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --bg-main: #03101E;
+    --bg-outer: #041727;
+    --surface-shell: #071B2D;
+    --surface-card: #0A2339;
+    --surface-card-hover: #0E2E4B;
+    --surface-secondary: #0C2942;
+    --surface-inset: #051625;
+    --border-electric: #087FC7;
+    --border-highlight: #27B9FF;
+    --border-subtle: #164665;
+    --border-soft: #145B89;
+    --divider: #123650;
+    --cyan-primary: #23D5F4;
+    --cyan-bright: #38DDF7;
+    --turquoise: #18E1C1;
+    --mint: #43E8B7;
+    --positive: #36D6A4;
+    --emergency: #FF873D;
+    --warning: #FFB34F;
+    --critical: #FF634D;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-main);
+    color: #F1F7FF;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom glow and futuristic styling */
+.neon-shell-glow {
+  box-shadow: 
+    0 0 0 1px rgba(39, 185, 255, 0.4),
+    0 0 30px rgba(0, 174, 255, 0.18),
+    0 25px 60px -15px rgba(2, 10, 20, 0.9),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15),
+    inset 0 0 35px rgba(8, 127, 199, 0.12);
+}
+
+.panel-card-glow {
+  box-shadow: 
+    0 0 0 1px rgba(20, 91, 137, 0.5),
+    0 4px 20px rgba(2, 12, 24, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.panel-card-glow:hover {
+  box-shadow: 
+    0 0 0 1px rgba(39, 185, 255, 0.6),
+    0 6px 24px rgba(0, 174, 255, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.cyan-btn-glow {
+  box-shadow: 
+    0 0 0 1px #27B9FF,
+    0 0 15px rgba(35, 213, 244, 0.45);
+}
+
+.orange-btn-glow {
+  box-shadow: 
+    0 0 0 1px #FF873D,
+    0 0 15px rgba(255, 135, 61, 0.4);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #051625;
+}
+::-webkit-scrollbar-thumb {
+  background: #145B89;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #23D5F4;
+}
